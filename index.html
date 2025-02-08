@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервисный центр "Serbe"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__links">
+                <a class="header__link" href="#">
+                    О нас
+                </a>
+                <a class="header__link" href="#">
+                    Услуги
+                </a>
+                <a class="header__link" href="#">
+                    Отзывы
+                </a>
+            </div>
+            <div class="header__authorization">
+                <a class="header__auth-link" href="#">
+                    Войти
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="advertising">
+            <div class="advertising__wrapper">
+                <img class="advertising__image" src="./img/Group 173.png" alt="Проблемы с гаджетами">
+                <h1 class="advertising__title">Проблемы с гаджетами - это к нам!</h1>
+            </div>
+        </section>        
+        <section class="about">
+            <div class="about__wrapper">
+                <div class="about__main">
+                    <h1 class="about__title">О нас</h1>
+                    <p class="about__text">
+                        Сервисные центры, такие как Serbe, часто ценятся за высокое качество обслуживания, наличие запчастей и опытных специалистов, что позволяет им оперативно и качественно решать проблемы клиентов.
+                    </p>
+                    <button class="about__button">Подробнее</button>
+                </div>
+                <div class="about__photos">
+                    <div class="about__photos-client">
+                        <img class="about__photo" src="./img/image 37.jpg" alt="Фото клиента">
+                        <img class="about__photo" src="./img/image 39.jpg" alt="Фото клиента">
+                    </div>
+                    <div class="about__photos-work">
+                        <img class="about__photo" src="./img/Rectangle 288.jpg" alt="Фото работы">
+                        <img class="about__photo" src="./img/Rectangle 289.jpg" alt="Фото работы">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="services__wrapper">
+                <div class="services__switch-buttons">
+                    <button id="set-1" onclick="showFirstSet()">Ремонт телефонов</button>
+                    <button id="set-2" onclick="showSecondSet()">Ремонт компьютеров</button>
+                    <button id="set-3" onclick="showThirdSet()">Обслуживание техники</button>
+                </div>
+                <div class="services__items">
+                    <div class="services__item">
+                        <div class="services__item-title">
+                            <h1 id="text-1">Замена экрана</h1>
+                        </div>
+                        <img id="img-1" class="services__item-image" src="./img/Rectangle 292.png">
+                        <div class="services__item-price">
+                            <h2 id="price-1">1400₽</h2>
+                            <button class="services__item-button">Записаться</button>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__item-title">
+                            <h1 id="text-2">Ремонт батареи</h1>
+                        </div>
+                        <img id="img-2" class="services__item-image" src="./img/Rectangle 290.png">
+                        <div class="services__item-price">
+                            <h2 id="price-2">1600₽</h2>
+                            <button class="services__item-button">Записаться</button>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__item-title">
+                            <h1 id="text-3">Установка ПО</h1>
+                        </div>
+                        <img id="img-3" class="services__item-image" src="./img/Rectangle 290.png">
+                        <div class="services__item-price">
+                            <h2 id="price-3">700₽</h2>
+                            <button class="services__item-button">Записаться</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="reviews__wrapper">
+                <div class="reviews__header">
+                    <h1>Что говорят клиенты о нас</h1>
+                    <div class="reviews__subtitle">
+                        <p>Отзывы</p>
+                    </div>
+                </div>
+                <div class="reviews__list">
+                    <div class="reviews__item">
+                        <div class="reviews__author">
+                            <img src="./img/Rectangle 309.png" class="reviews__author-image">
+                            <div class="reviews__author-info">
+                                <h1 class="reviews__author-name">Елизавета</h1>
+                                <h1 class="reviews__author-date">10.05.2024</h1>
+                            </div>
+                        </div>
+                        <p class="reviews__text">
+                            Приятная команда специалистов высокого уровня, обслуживание и 
+                            комфорт на высоте. Учли все мои пожелания, я довольна!
+                        </p>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__author">
+                            <img src="./img/Rectangle 310.png" class="reviews__author-image">
+                            <div class="reviews__author-info">
+                                <h1 class="reviews__author-name">Ксения</h1>
+                                <h1 class="reviews__author-date">12.02.2024</h1>
+                            </div>
+                        </div>
+                        <p class="reviews__text">
+                            Я в восторге! Получила качественную услугу за приятную стоимость.
+                        </p>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__author">
+                            <img src="./img/Rectangle 311.png" class="reviews__author-image">
+                            <div class="reviews__author-info">
+                                <h1 class="reviews__author-name">Ольга</h1>
+                                <h1 class="reviews__author-date">28.12.2023</h1>
+                            </div>
+                        </div>
+                        <p class="reviews__text">
+                            Уютная атмосфера, качественная услуга, приятная беседа. Всё было на высшем уровне, спасибо!
+                        </p>
+                    </div>
+                </div>
+                <div class="reviews__navigation">
+                    <svg class="reviews__arrow reviews__arrow--prev" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                        <rect x="0.5" y="0.5" width="59" height="59" rx="24.5" fill="#F4EFEF" stroke="#859B86"/>
+                        <path d="M14.6464 30.3536C14.4512 30.1583 14.4512 29.8417 14.6464 29.6464L17.8284 26.4645C18.0237 26.2692 18.3403 26.2692 18.5355 26.4645C18.7308 26.6597 18.7308 26.9763 18.5355 27.1716L15.7071 30L18.5355 32.8284C18.7308 33.0237 18.7308 33.3403 18.5355 33.5355C18.3403 33.7308 18.0237 33.7308 17.8284 33.5355L14.6464 30.3536ZM45 30.5H15V29.5H45V30.5Z" fill="#859B86"/>
+                    </svg>
+                    <svg class="reviews__arrow reviews__arrow--next" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                        <rect x="0.5" y="0.5" width="59" height="59" rx="24.5" fill="#F4EFEF" stroke="#859B86"/>
+                        <path d="M45.3536 30.3536C45.5488 30.1583 45.5488 29.8417 45.3536 29.6464L42.1716 26.4645C41.9763 26.2692 41.6597 26.2692 41.4645 26.4645C41.2692 26.6597 41.2692 26.9763 41.4645 27.1716L44.2929 30L41.4645 32.8284C41.2692 33.0237 41.2692 33.3403 41.4645 33.5355C41.6597 33.7308 41.9763 33.7308 42.1716 33.5355L45.3536 30.3536ZM15 30.5H45V29.5H15V30.5Z" fill="#859B86"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__item">
+                <a href="#" class="footer__link">О нас</a>
+                <a href="#" class="footer__link">Услуги</a>
+            </div>
+            <div class="footer__item">
+                <a href="#" class="footer__link">Наша команда</a>
+                <a href="#" class="footer__link">Отзывы</a>
+            </div>
+            <div class="footer__item">
+                <a href="#" class="footer__link">
+                    <div class="footer__nav-link">
+                        <svg class="footer__icon" width="28" height="30" viewBox="0 0 28 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 0C10.2885 0.00363886 6.73009 1.31909 4.10551 3.65778C1.48093 5.99647 0.00445516 9.16741 0 12.475C0 15.6875 2.7913 20.715 8.29676 27.4175C8.95217 28.2176 9.81032 28.8686 10.8014 29.3173C11.7924 29.7661 12.8884 30 14 30C15.1116 30 16.2076 29.7661 17.1986 29.3173C18.1897 28.8686 19.0478 28.2176 19.7032 27.4175C25.2087 20.715 28 15.6875 28 12.475C27.9955 9.16741 26.5191 5.99647 23.8945 3.65778C21.2699 1.31909 17.7115 0.00363886 14 0ZM14 17.4475C12.8903 17.4475 11.8056 17.1542 10.8829 16.6048C9.96022 16.0554 9.24108 15.2745 8.81642 14.3609C8.39177 13.4473 8.28066 12.4419 8.49715 11.472C8.71363 10.5021 9.248 9.61121 10.0327 8.91195C10.8173 8.21269 11.8171 7.73649 12.9054 7.54356C13.9938 7.35064 15.1219 7.44965 16.1471 7.82809C17.1723 8.20653 18.0486 8.84739 18.6651 9.66963C19.2816 10.4919 19.6107 11.4586 19.6107 12.4475C19.6107 13.7736 19.0195 15.0453 17.9673 15.983C16.9151 16.9207 15.488 17.4475 14 17.4475Z" fill="black"/>
+                        </svg>
+                        Г. Астрахань, ул. Савушкина 6К6
+                    </div>
+                </a>
+            </div>
+            <div class="footer__item">
+                <p class="footer__title">Наши соц. сети</p>
+                <div class="footer__icons">
+                    <a href="#" class="footer__icon-link">
+                        <svg class="footer__social-icon" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M41.8425 3.1575C38.685 0 33.6019 0 23.4375 0H21.5625C11.3981 0 6.315 0 3.1575 3.1575C0 6.315 0 11.3981 0 21.5625V23.4375C0 33.6019 0 38.6831 3.1575 41.8425C6.315 45.0019 11.3981 45 21.5625 45H23.4375C33.6019 45 38.6831 45 41.8425 41.8425C45 38.685 45 33.6019 45 23.4375V21.5625C45 11.3981 45 6.315 41.8425 3.1575ZM36.5681 31.875H33.2869C32.0363 31.875 31.6688 30.8775 29.4431 28.6519C27.495 26.775 26.6606 26.5312 26.175 26.5312C25.5131 26.5312 25.3162 26.7188 25.3162 27.6562V30.5981C25.3162 31.4044 25.0594 31.875 22.9725 31.875C19.4963 31.875 15.675 29.7638 12.9619 25.8713C8.89313 20.1694 7.78125 15.8587 7.78125 14.9906C7.78125 14.5031 7.96875 14.0625 8.90625 14.0625H12.1894C13.0275 14.0625 13.3425 14.43 13.6575 15.3375C15.2625 20.0119 17.97 24.0975 19.0819 24.0975C19.4981 24.0975 19.6894 23.9044 19.6894 22.8469V18.015C19.5675 15.7912 18.3844 15.6075 18.3844 14.8162C18.3844 14.4506 18.6975 14.0625 19.2188 14.0625H24.3769C25.0725 14.0625 25.3144 14.4337 25.3144 15.2681V21.7687C25.3144 22.4625 25.6162 22.7062 25.8244 22.7062C26.2425 22.7062 26.5894 22.4625 27.3544 21.6975C29.7188 19.0556 31.3875 14.9887 31.3875 14.9887C31.5975 14.5013 31.98 14.0606 32.8162 14.0606H36.0975C37.0894 14.0606 37.2994 14.5706 37.0894 15.2663C36.6712 17.1788 32.6738 22.8094 32.6738 22.8094Z" fill="black"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__icon-link">
+                        <svg class="footer__social-icon" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M38.4455 6.54C34.2139 2.325 28.5882 0.001875 22.5951 0C10.2453 0 0.194055 10.0013 0.188403 22.2975C0.186519 26.2275 1.21897 30.0637 3.18024 33.4462L0 45L11.8769 41.8988C15.1495 43.6763 18.8346 44.6119 22.5838 44.6138H22.5933C34.9412 44.6138 44.9943 34.6106 45 22.3144C45.0038 16.3575 42.6751 10.7531 38.4455 6.54ZM22.5951 40.8469H22.5876C19.2453 40.8469 15.969 39.9525 13.1091 38.2631L12.4289 37.8619L5.38078 39.7012L7.26293 32.8612L6.82018 32.16C4.95499 29.2088 3.97153 25.7981 3.97341 22.2975C3.97718 12.0788 12.3328 3.765 22.6046 3.765C27.5784 3.765 32.2546 5.69625 35.7701 9.19875C39.2857 12.7031 41.2206 17.3587 41.2188 22.3106C41.2131 32.5331 32.8593 40.8469 22.5951 40.8469ZM32.8103 26.9662C32.2508 26.6869 29.4982 25.3388 28.9839 25.1531C28.4714 24.9675 28.0984 24.8737 27.7235 25.4306C27.3485 25.9875 26.2784 27.2437 25.9506 27.6169C25.6247 27.9881 25.2968 28.035 24.7373 27.7556C24.1777 27.4763 22.3728 26.8894 20.2345 24.99C18.5709 23.5125 17.4461 21.6881 17.1202 21.1294C16.7942 20.5706 17.0862 20.2706 17.3651 19.9931C17.6175 19.7437 17.9246 19.3425 18.2054 19.0163C18.488 18.6938 18.5803 18.4613 18.7687 18.0881C18.9552 17.7169 18.8629 17.3906 18.7216 17.1112C18.5803 16.8338 17.4612 14.0906 16.9958 12.975C16.5418 11.8875 16.0802 12.0356 15.7354 12.0187C15.4095 12.0019 15.0364 12 14.6615 12C14.2885 12 13.6818 12.1388 13.1694 12.6975C12.6569 13.2562 11.21 14.6044 11.21 17.3456C11.21 20.0888 13.2165 22.7381 13.4953 23.1094C13.7741 23.4806 17.4423 29.1094 23.0586 31.5225C24.3944 32.0962 25.4381 32.4394 26.2502 32.6963C27.5916 33.12 28.8124 33.06 29.7771 32.9175C30.8528 32.7581 33.0892 31.5694 33.5564 30.2681C34.0237 28.9669 34.0237 27.8494 33.8824 27.6187C33.7429 27.3844 33.3699 27.2456 32.8103 26.9662Z" fill="black"/>
+                        </svg> 
+                    </a>
+                    <a href="#" class="footer__icon-link">
+                        <svg class="footer__social-icon" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_231)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 0C10.0744 0 0 10.0744 0 22.5C0 34.9256 10.0744 45 22.5 45C34.9256 45 45 34.9256 45 22.5C45 10.0744 34.9256 0 22.5 0ZM32.9287 15.3019C32.5913 18.8588 31.125 27.4931 30.3806 31.4775C30.0656 33.165 29.4431 33.7294 28.8431 33.7837C27.5363 33.9037 26.5444 32.9194 25.2788 32.0906C23.2987 30.7931 22.1794 29.985 20.2575 28.7175C18.0356 27.2531 19.4756 26.4487 20.7413 25.1344C21.0731 24.7894 26.8294 19.5525 26.9419 19.0781C26.955 19.0181 26.97 18.7969 26.8369 18.6806C26.7037 18.5644 26.5106 18.6038 26.3719 18.6356C26.1731 18.6806 23.01 20.7712 16.8806 24.9075C15.9825 25.5244 15.1688 25.8244 14.4394 25.8094C13.6369 25.7925 12.0919 25.3556 10.9425 24.9806C9.53438 24.5231 8.41313 24.2794 8.51062 23.5031C8.56125 23.0981 9.11812 22.6838 10.1831 22.26C16.7419 19.4025 21.1162 17.5181 23.3044 16.6069C29.5537 14.0081 30.8512 13.5563 31.6987 13.5413C32.76 13.5262 33.015 14.4019 32.9287 15.3019Z" fill="black"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_231">
+                            <rect width="45" height="45" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>    
+</body>
+<script src="./scripts/script.js"></script>
+</html>
